@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
+        
+        .wrapper {
+            width: 1089px;
+            height: 700px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+        
+        header {
+            align-items: center;
+            position: relative;
+            width: 1089px;
+            height: 150px;
+            background-color: #294e79;
+        }
+        
+        .logo {
+            position: relative;
+            align-items: center;
+            left: 10px;
+            width: 80px;
+            height: 120px;
+        }
+        
+        .web_name {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 44px;
+            color: #fff;
+            position: absolute;
+            left: 100px;
+            top: 30px;
+        }
+        
+        .web_name1 {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #fff;
+            position: absolute;
+            left: 90px;
+            top: 55%;
+        }
+        
+        .ser {
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(18, 12, 59);
+            width: 200px;
+            height: 30px;
+            border: 1px;
+            border-color: rgb(32, 55, 205);
+            border-style: solid;
+            font-size: 15px;
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 820px;
+        }
+        
+        .ser1 {
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(18, 12, 59);
+            width: 50px;
+            height: 30px;
+            border: 1px;
+            border-color: rgb(32, 55, 205);
+            border-style: solid;
+            font-size: 15px;
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        #search_form_btn {
+            background-color: #1c3451;
+            border: 1px solid #4579b7;
+            color: #fff;
+            height: 20px;
+        }
+        
+        .search_form {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .nav {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            width: 550px;
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+        }
+        
+        .nav_item {
+            padding: 10px 15px;
+            background-color: #3d73b1;
+        }
+        
+        .nav_item a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .container {
+            width: 100%;
+            display: flex;
+            top: 50%;
+        }
+        
+        .left1 {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            top: 50px;
+        }
+        
+        .c1 {
+            width: 55%;
+            /* height: 100px; */
+        }
+        
+        .c2 {
+            width: 40%;
+            /* height: 100px; */
+            /* background-color: yellow; */
+        }
+        
+        .c3 {
+            border-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 30%;
+            height: 500px;
+            border: 1px solid rgb(137, 135, 135);
+            background-color: darkgray;
+        }
+        
+        .main_para {
+            width: 100%;
+            padding: 40px 0px 15px 15px;
+            font-size: 25px;
+            font-weight: 400;
+            border-bottom: 2px dashed gray;
+            color: darkgray;
+        }
+        
+        .c1_para {
+            padding: 20px 30px 20px 15px;
+            text-align: justify;
+            color: red;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 8px 8px 5px green;
+            font-weight: 400;
+        }
+        
+        .c2_para {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 15px 0px 15px;
+            width: 100%;
+            font-size: 25px;
+            font-weight: 400;
+            border-bottom: 2px dashed gray;
+        }
+        
+        .c2_des1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 0 40px 0;
+        }
+        
+        .c2_des2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .c2_des3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+        
+        .c3_para {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 15px 0px 15px;
+            width: 100%;
+            font-size: 25px;
+            border-bottom: 2px dashed gray;
+        }
+        
+        footer {
+            background-color: #1c3451;
+            /* display: flex; */
+            /* position: relative;
+            top: 400px; */
+            height: 35px;
+        }
+        
+        #footer_line {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 10px;
+            color: #8babd0;
+            line-height: 35px;
+        }
+        
+        #footer_line .white {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/IMAGE/AnhLogo.PNG" alt="" class="logo">
+            <p class="web_name">FlowerBox 360</p>
+            <p class="web_name1">... to get your daily dose of luxury roses!</p>
+            <form action="">
+                <input class="ser" placeholder="Search the site...">
+                <input class="ser1" type="submit" value="GO">
+            </form>
+            <div class="nav">
+                <div class="nav_item"><a href="">Home</a></div>
+                <div class="nav_item"><a href="">Promotion</a></div>
+                <div class="nav_item"><a href="">Gift Baskets</a></div>
+                <div class="nav_item"><a href="">Flower Service</a></div>
+                <div class="nav_item"><a href="">About</a></div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="left1">
+                <p class="main_para">Why Not Contact Us Today!</p>
+                <div class="c1">
+                    <p class="c1_para">For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so at a great value.</p>
+                    <form action="" class="c1_form">
+                        <table>
+                            <tr>
+                                <td><label for="name_ip">Name:</label></td>
+                                <td><label for="mail_ip">Email:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="" id="name_ip"></td>
+                                <td><input type="email" name="" id="mail_ip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tel_ip">Telephone:</label></td>
+                                <td><label for="sub_ip">Subject:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" name="" id="tel_ip"></td>
+                                <td><input type="text" name="" id="sub_ip"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="mess_ip">Message:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <textarea name="" id="" cols="45" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+                                <tr>
+                                    <td><input type="button" value="Submit"> <input type="button" value="Reset"></td>
+                                </tr>
+                            </tr>
+                        </table>
+
+                    </form>
+                </div>
+                <div class="c2">
+                    <p class="c2_para">FlowerBox 360 Info!</p>
+                    <p class="c2_des1">Operating Hours: <br> Monday-Friday: 9.00am-5.00pm.<br> Saturday:9.00am-1.00pm.
+                        <br> Sunday: Closed (No Deliveries)<br> ORDER ONLINE 24/7
+                    </p>
+                    <p class="c2_des2">
+                        Software Engineering Dept. <br> Information Technology Falcuty<br> First Floor, H Building
+                    </p>
+                    <p class="c2_des3">
+                        12 Nguyen Van Bao St., Ward 4<br> Go Vap District<br> Ho Chi Minh City<br> Tel: 0283 8940 390<br> Fax: 0283.9940 954
+                    </p>
+                </div>
+            </div>
+
+            <div class="c3">
+                <p class="c3_para">Discounts & Specials</p>
+            </div>
+
+        </div>
+        <footer>
+            <p id="footer_line"><span class="white">Copyright © 2017 - All Rights Reserved -</span> Software Engineering Department - Industrial University of Ho Chi Minh City</p>
+        </footer>
+    </div>
+</body>
+
+</html>
