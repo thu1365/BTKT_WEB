@@ -102,6 +102,35 @@
             text-decoration: none;
         }
         
+        .nav1 {
+            display: none;
+            position: absolute;
+            top: 39px;
+            left: 0px;
+            width: 180px;
+            height: 60px;
+            background-color: #8babd0;
+        }
+        
+        .nav2 {
+            box-sizing: border-box;
+            padding-left: 15px;
+            line-height: 30px;
+            height: 50%;
+            border: 1px solid rgb(158, 196, 240);
+            color: white;
+        }
+        
+        .nav_item:hover .nav1 {
+            display: block;
+            background-color: #9bbbe0;
+        }
+        
+        .nav2:hover {
+            background-color: #edf6ff;
+            cursor: pointer;
+        }
+        
         .container {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding-bottom: 60px;
@@ -260,10 +289,21 @@
                 <input id="search2" type="button" value="GO">
             </form>
             <div class="nav">
-                <div class="nav_item"><a href="">Home</a></div>
+                <div class="nav_item"><a href="">Home</a>
+                    <div class="nav1">
+                        <div class="nav2"><b>Home1</b></div>
+                        <div class="nav2"><b>Home2</b></div>
+                    </div>
+                </div>
                 <div class="nav_item"><a href="">Promotion</a></div>
                 <div class="nav_item"><a href="">Gift Baskets</a></div>
-                <div class="nav_item"><a href="">Flower Service</a></div>
+                <div class="nav_item"><a href="">Flower Service</a>
+                    <div class="nav1">
+                        <div class="nav2"><b>Flower for Wedding</b></div>
+                        <div class="nav2"><b>Flower for Conference</b></div>
+
+                    </div>
+                </div>
                 <div class="nav_item"><a href="">About</a></div>
             </div>
         </header>
